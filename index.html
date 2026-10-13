@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MusicTop</title>
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="flex-div">
+            <div><img src="logo.png" height="70px"></div>
+        </div>
+
+        <div class="flex-form">
+            <form id="form-entrar">
+                <input type="text" id="input-entrar" name="entrar" class="input-login" placeholder="Entrar">
+            </form>
+            <form id="form-cadastrar">
+                <input type="text" id="input-cadastrar" name="cadastrar" class="input-login" placeholder="Cadastrar">
+            </form>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <div>
+            <h2>Bem Vindo!</h2>
+            <form id="pesquisa">
+                <input type="text" id="input-pesquisa" name="pesquisa" class="input-pesquisar" placeholder="Busque pela sua musica aqui!">
+            </form>
+        </div>
+
+        <div class="div-musicas">
+
+            <div id="musica1" data-id="1" class="molde-capa">
+                <img class="img-musicas" src="capas/elements-capa.jpg">
+                <p>Learning to fly</p>
+            </div>
+            <div id="musica2" data-id="2" class="molde-capa">
+                <img class="img-musicas" src="capas/chineseWall-capa.jpg">
+                <p>Easy Lover</p>
+            </div>
+
+            <div id="musica3" data-id="3" class="molde-capa">
+                <img class="img-musicas" src="capas/coisaDeAcender-capa.jpg">
+                <p>Se...</p>
+            </div>
+            <div id="musica4" data-id="4" class="molde-capa">
+                <img class="img-musicas" src="capas/ericClaptonRAH-capa.jpg">
+                <p>Layla</p>
+            </div>
+            <div id="musica5" data-id="5" class="molde-capa">
+                <img class="img-musicas" src="capas/angelsCry-capa.jpg">
+                <p>Stand Away</p>
+            </div>
+
+            
+
+
+
+        </div>
+
+        <div class="flutuante">
+
+            <div class="div-player">
+                <img class="img-musicas">
+                <audio id="player" controls>
+                    <source id="audio-source" src="" type="audio/mpeg">
+                </audio>
+                <a class="button-sair" id="btn-voltar">Voltar</a>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
