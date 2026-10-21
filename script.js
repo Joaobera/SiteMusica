@@ -11,9 +11,11 @@ const formCadastrar = document.querySelector("#form-cadastrar");
 const inputCadastrar = document.querySelector("#input-cadastrar");
 const btnVoltar = document.getElementById("btn-voltar");
 
-btnVoltar.addEventListener('click', ()=>{
-    divFlutuante.style.display = "none";
-    divPaiFlutuante.style.display = "none"
+
+btnVoltar.addEventListener('click', () => {
+
+    divPaiFlutuante.classList.remove("ativo");
+
     player.pause();
 
 })
@@ -97,7 +99,7 @@ formCadastrar.addEventListener("submit", (evento) => {
 
     cadastro();
 
-    
+
 
     inputCadastrar.value = "";
 })
@@ -130,9 +132,10 @@ classes.forEach(e => {
 
         const idDaMusica = e.dataset.id;
 
-        divFlutuante.style.display = "block";
+        
 
-        divPaiFlutuante.style.display = "flex"
+        divPaiFlutuante.classList.add("ativo");
+
 
         const imagem = e.querySelector("img");
 
